@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+.fontThis {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin-top: 1px;
+}
+.quizContain {
+    background-color: white;
+    padding: 2px;
+    width: 50%;
+    height: 500px;
+    border-radius: 10%;
+}
+.timer {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-left: -500px;
+    margin-top: -10px;
+    
+}
+.highscore {
+    color: black;
+    margin-top: -55px;
+    margin-left: 550px;
+    margin-bottom: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#buttonHigh {
+    border-radius: 30%;
+}
