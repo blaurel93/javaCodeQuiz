@@ -5,7 +5,17 @@
     color: white;
     margin-top: 1px;
 }
-.quizContain {
+.fontQuestion {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-size: 24px;
+}
+.startbutton {
+    margin-left: 48%;
+    margin-top: 30%;
+}
+
+#quizContain {
     background-color: white;
     padding: 2px;
     width: 50%;

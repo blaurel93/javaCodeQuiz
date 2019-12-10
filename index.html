@@ -31,28 +31,104 @@
         <h1 class="fontThis">The Code Quiz</h1>
     </header>
     <div class="timer">
-        <p>Time Remaining</p><span id="timer" value="0">0</span>
+        <p>Time Remaining</p><span id="timer"></span>
     </div>
     <div class="highscore">
         <button id="buttonHigh">High Scores</button>
     </div>
-    <div class="container quizContain">
 
+    <div class="container" id="quizContain">
+        <div class="startbutton"><button class="btn btn-dark" type="button" id="startButton">Start</button></div>
+        <!-- QUESTION 1 -->
+        <div class="btn-group btn-group-toggle quizQuestions" id="quizQuestion1" data-toggle="buttons">
+            <p class="fontQuestion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus </p>
+            <label class="btn btn-secondary">
+                <input type="radio" name="question1" id="option1"> Answer 1
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Answer 2
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Answer 3
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option4"> Answer 4
+            </label>
 
+        </div>
+        <!-- QUESTION 2 -->
+        <div class="btn-group btn-group-toggle quizQuestions" id="quizQuestion2" data-toggle="buttons">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus </p>
+            <label class="btn btn-secondary">
+                <input type="radio" name="question1" id="option1"> Answer 1
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Answer 2
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Answer 3
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option4"> Answer 4
+            </label>
 
+        </div>
+        <!-- QUESTION 3 -->
+        <div class="btn-group btn-group-toggle quizQuestions" id="quizQuestion3" data-toggle="buttons">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus </p>
+            <label class="btn btn-secondary">
+                <input type="radio" name="question1" id="option1"> Answer 1
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Answer 2
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Answer 3
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option4"> Answer 4
+            </label>
 
+        </div>
+        <!-- QUESTION 4 -->
+        <div class="btn-group btn-group-toggle quizQuestions" id="quizQuestion4" data-toggle="buttons">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus </p>
+            <label class="btn btn-secondary">
+                <input type="radio" name="question1" id="option1"> Answer 1
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Answer 2
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Answer 3
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option4"> Answer 4
+            </label>
 
+        </div>
+        <!-- QUESTION 5 -->
+        <div class="btn-group btn-group-toggle quizQuestions" id="quizQuestion5" data-toggle="buttons">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus </p>
+            <label class="btn btn-secondary">
+                <input type="radio" name="question1" id="option1"> Answer 1
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2"> Answer 2
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Answer 3
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option4"> Answer 4
+            </label>
 
-
-
-
-
-
-
-
-
+        </div>
+        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="questions.js"></script>
     <script src="jumpin.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
