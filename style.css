@@ -5,10 +5,12 @@
 .quizContainer {
     width: 60%;
     height: 500px;
-    padding: 12px;
+    padding: 20px;
     background-color: grey;
     margin-top: 2%;
     font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 .titleHead {
     text-align: center;
@@ -27,22 +29,26 @@
     padding-top: 50px;
 }
 .buttonStyle {
-    padding: 20px;
-    border-radius: 20px;
-    width: 200px;
-    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
     
 }
 .progressSpot {
     clear: both;
-    margin-top: 210px;
+    margin-top: 160px;
 }
-#startButton {
+.startButton {
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+}
+.nextButton {
     border-radius: 20px;
     width: 100px;
     height: 30px;
 }
 .startSpot {
     margin-left: 45%;
-    
 }

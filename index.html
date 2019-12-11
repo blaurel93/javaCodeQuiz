@@ -36,11 +36,19 @@
         </div>
         <!--  TIMER ON TOP LEFT AND HIGH SCORE ON TOP RIGHT -->
         <!-- WHEN START IS PRESSED SHOW QUESTION AND ANSWER 0 , THEN 1 ETC.-->
-        <div class="startSpot"><button id="startButton">Start</button></div>
-        <div class="container" id="extraControls">
-            <div id="questionSpot">Question</div>
-            <div id="answer-btns" class="buttonStyle">
-                
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id="questionSpot">Question</div>
+                <div id="answer-btns" class="buttonStyle">
+                    <button class="answerBtn">Answer 1</button>
+                    <button class="answerBtn">Answer 2</button>
+                    <button class="answerBtn">Answer 3</button>
+                    <button class="answerBtn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="startButton" class="startButton">Start</button>
+                <button id="nextQuestion" class="nextButton hide">Next</button>
             </div>
             
             <footer class="progressSpot hide">
