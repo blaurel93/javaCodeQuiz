@@ -12,10 +12,35 @@
 .titleHead {
     text-align: center;
     margin-top: 2%;
+    color: white;
 }
 #scoreBtn {
     float: right;
 }
 #timerLocation {
     float: left;
+}
+#questionSpot {
+    clear: both;
+    padding-top: 50px;
+}
+.buttonStyle {
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    
+}
+.progressSpot {
+    clear: both;
+    margin-top: 210px;
+}
+#startButton {
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+}
+.startSpot {
+    margin-left: 45%;
+    
 }

@@ -9,27 +9,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url(https://images.unsplash.com/photo-1569264096977-b2cae986c680?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80)no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
     <h1 class="titleHead">javaQuiz</h1>
     <div class="container quizContainer">
+        <!--  TIMER ON TOP LEFT AND HIGH SCORE ON TOP RIGHT -->
         <div class="topPart">
             <p id="timerLocation"><span id="timer">00</span></p>
             <button id="scoreBtn"><span id="highScore">HighScores</span></button>
         </div>
-
-
-
-
-
-
-
-
-
-
-
+        <!--  TIMER ON TOP LEFT AND HIGH SCORE ON TOP RIGHT -->
+        <!-- WHEN START IS PRESSED SHOW QUESTION AND ANSWER 0 , THEN 1 ETC.-->
+            <div class="startSpot"><button id="startButton">Start</button></div>
+        <div class="hideShow">
+            <p id="questionSpot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officiis aspernatur
+            </p>
+            <button class="buttonStyle" id="answer0"></button>
+            <button class="buttonStyle" id="answer1"></button>
+            <hr>
+            <button class="buttonStyle" id="answer2"></button>
+            <button class="buttonStyle" id="answer3"></button>
+        </div>
+        <footer class="progressSpot">
+            <p id="progressSection">1 of 5</p>
+        </footer>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="jumpin.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
