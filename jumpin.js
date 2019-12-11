@@ -1,35 +1,16 @@
-$(document).ready(function () {
-    $(".hideShow").hide();
 
-    var highScores = document.getElementById("#highScores");
-    var timer = document.getElementById("#timer");
-    var hideShow = document.getElementById("#hideShow");
+$(document).ready(function () {
+    $("#extraControls").hide();
+
+    var highScores = $("#highScores");
+    var timer = $("#timer");
+    var hideShow = $("#hideShow");
 
 
     $("#startButton").click(function () {
-        $("#hideShow").show
-    })
+        $("#extraControls").show();
+        $("#startButton").hide();
+    });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-})
+});
