@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+.quizContainer {
+    width: 60%;
+    height: 500px;
+    padding: 12px;
+    background-color: grey;
+    margin-top: 2%;
+}
+.titleHead {
+    text-align: center;
+    margin-top: 2%;
+}
+#scoreBtn {
+    float: right;
+}
+#timerLocation {
+    float: left;
+}
