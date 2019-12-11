@@ -8,11 +8,13 @@
     padding: 12px;
     background-color: grey;
     margin-top: 2%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .titleHead {
     text-align: center;
     margin-top: 2%;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #scoreBtn {
     float: right;

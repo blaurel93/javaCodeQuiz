@@ -31,22 +31,19 @@
     <div class="container quizContainer">
         <!--  TIMER ON TOP LEFT AND HIGH SCORE ON TOP RIGHT -->
         <div class="topPart">
-            <p id="timerLocation"><span id="timer">00</span></p>
+            <p id="timerLocation"><span id="timer">Seconds Left</span></p>
             <button id="scoreBtn"><span id="highScore">HighScores</span></button>
         </div>
         <!--  TIMER ON TOP LEFT AND HIGH SCORE ON TOP RIGHT -->
         <!-- WHEN START IS PRESSED SHOW QUESTION AND ANSWER 0 , THEN 1 ETC.-->
         <div class="startSpot"><button id="startButton">Start</button></div>
-        <div class="container fadeMe" id="extraControls">
-            <p id="questionSpot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-                officiis aspernatur
-            </p>
-            <button class="buttonStyle" id="answer0"></button>
-            <button class="buttonStyle" id="answer1"></button>
-            <hr>
-            <button class="buttonStyle" id="answer2"></button>
-            <button class="buttonStyle" id="answer3"></button>
-            <footer class="progressSpot">
+        <div class="container" id="extraControls">
+            <div id="questionSpot">Question</div>
+            <div id="answer-btns" class="buttonStyle">
+                
+            </div>
+            
+            <footer class="progressSpot hide">
                 <p id="progressSection">1 of 5</p>
             </footer>
         </div>
