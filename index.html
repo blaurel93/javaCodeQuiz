@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <style>
         body {
-            background: url(https://images.unsplash.com/photo-1569264096977-b2cae986c680?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80)no-repeat center center fixed;
+            background: url("https://images.unsplash.com/photo-1569264096977-b2cae986c680?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80")no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -24,6 +24,12 @@
             min-height: 100vh;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -31,44 +37,32 @@
     <div class="container quizContainer">
         <!--  TIMER ON TOP LEFT AND HIGH SCORE ON TOP RIGHT -->
         <div class="topPart">
-            <p id="timerLocation"><span id="timer">Seconds Left</span></p>
-            <button id="scoreBtn"><span id="highScore">HighScores</span></button>
+            <p class="hide" id="timerLocation"><span id="timer">Seconds Left</span></p>
+            <button class="scoreBtn hide"><span id="highScore">HighScores</span></button>
         </div>
         <!--  TIMER ON TOP LEFT AND HIGH SCORE ON TOP RIGHT -->
         <!-- WHEN START IS PRESSED SHOW QUESTION AND ANSWER 0 , THEN 1 ETC.-->
         <div class="container">
             <div id="question-container" class="hide">
-                <div id="questionSpot">Question</div>
+                <div id="questionSpot"></div>
                 <div id="answer-btns" class="buttonStyle">
-                    <button class="answerBtn">Answer 1</button>
-                    <button class="answerBtn">Answer 2</button>
-                    <button class="answerBtn">Answer 3</button>
-                    <button class="answerBtn">Answer 4</button>
+                    <button class="answerBtn" id="answerBtn0" onclick="checkAnswer(0)"></button>
+                    <button class="answerBtn" id="answerBtn1" click="checkAnswer(1)"></button>
+                    <button class="answerBtn" id="answerBtn2" click="checkAnswer(2)"></button>
+                    <button class="answerBtn" id="answerBtn3" click="checkAnswer(3)"></button>
                 </div>
             </div>
             <div class="controls">
                 <button id="startButton" class="startButton">Start</button>
-                <button id="nextQuestion" class="nextButton hide">Next</button>
+
             </div>
-            
+
             <footer class="progressSpot hide">
                 <p id="progressSection">1 of 5</p>
             </footer>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="jumpin.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -78,6 +72,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="jumpin.js"></script>
+
 </body>
 
 </html>

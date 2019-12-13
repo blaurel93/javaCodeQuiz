@@ -18,9 +18,7 @@
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
-#scoreBtn {
-    float: right;
-}
+
 #timerLocation {
     float: left;
 }
@@ -33,22 +31,45 @@
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
-    
+}
+.scoreBtn {
+    float: right;
+    border-radius: 20px;
+    background-color: teal;
+    color: white;
+    padding: 3px;
+}
+.scoreBtn:hover {
+    border-color: black;
+}
+.answerBtn {
+    background-color: silver;
+    border-radius: 10px;
+}
+.answerBtn:hover {
+    border-color: black;
 }
 .progressSpot {
     clear: both;
     margin-top: 160px;
 }
+
 .startButton {
     border-radius: 20px;
     width: 100px;
     height: 30px;
+    
 }
-.nextButton {
-    border-radius: 20px;
-    width: 100px;
-    height: 30px;
+.startButton:hover {
+    color: white;
+    background-color: black;
 }
-.startSpot {
-    margin-left: 45%;
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
 }
