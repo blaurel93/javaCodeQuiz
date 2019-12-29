@@ -67,6 +67,13 @@ var runTime = true;
 
 
 
+
+
+
+
+
+
+
 ///// CREATE A FUNCTION TO START THE GAME ie START QUIZ /////
 startButton.click('click', startQuiz);
 
@@ -104,6 +111,7 @@ function endQuiz() {
     questionSpot.text('Congratz you got 5 out of 5 !')
     $("#answer-btns").empty();
     stopTimer();
+    saveScore();
 }
 
 
@@ -152,5 +160,11 @@ function checkAnswer(answer) {
 }
 // $("#answerbutton0").on("click", checkAnswer());
 
+function saveScore() {
+    localStorage.correctAnswers = runningQuestion
 
+}
+
+//// the saveScore function is just saving the number of the question runningQuestion is on Which is called at //
+//// the end of the game, and i made the test not able to continue till you enter the right answer ////
 
